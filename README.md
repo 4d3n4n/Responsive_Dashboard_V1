@@ -29,7 +29,7 @@ https://github.com/4d3n4n/Responsive_Dashboard_V1/assets/140979426/a8f0380c-d8fb
 1. Clonez le dépôt :
 
    ```bash
-   git clone https://github.com/votre-utilisateur/votre-repo.git
+   git clone https://github.com/4d3n4n/Responsive_Dashboard_V1.git
    cd votre-repo
    ```
    
