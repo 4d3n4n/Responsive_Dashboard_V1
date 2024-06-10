@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REACHFLOW DASHBOARD</title>
+    
+    <!--FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+
+    <!--CSS LINK-->
+    <link href="./style/reset.css" rel="stylesheet" type="text/css">
+    <link href="./style/user_dashboard.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--JS LINK-->
+    <script src="./assets/user_dashboard.js" defer></script>
+    <script src="./assets/dropdown.js" defer></script>
+</head>
+
+<body>
+
+    <div class="dashboard_container">
+        <div class="user_menu">
+            <div class="user_menu_header">
+                <div class="user_infos_container">
+                    <img src="./img/trace.svg" class="logo"" alt="logo">
+                    <div class="user_infos_section">
+                        <h4 class="user_name">John Doe</h4>
+                        <p class="credits">2000 credits</p>
+                    </div>
+                </div>
+                <i class="fa fa-chevron-down user_menu_dropdown_icon show_options" aria-hidden="true"></i>
+                <div class="account_menu opacity_account_menu">
+                    <div class="option_container">
+                        <p class="option"><i class="fa fa-credit-card-alt" aria-hidden="true"></i> Manange Subscription</p>
+                    </div>
+                    <div class="option_container">
+                        <p class="option"><i class="fa fa-envelope" aria-hidden="true"></i> Contact</p>
+                    </div>
+                    <div class="option_container">
+                        <p class="option"><i class="fa fa-sign-out" aria-hidden="true"></i> Log out</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="user_menu_content">
+                <label class="option_radio soon">
+                    <input disabled type="radio" name="menu_option" value="dashboard">
+                    <div class="option_text_container">
+                        <i class="fa fa-home" aria-hidden="true"></i>
+                        <p>Dashboard (soon)</p>
+                    </div>
+                </label>
+                <label class="option_radio">
+                    <input checked type="radio" class="menu_title input_university" name="menu_option" value="university">
+                    <div class="option_text_container">
+                        <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                        <p>University</p>
+                        <i class="fa fa-chevron-down user_menu_dropdown_icon" aria-hidden="true"></i>
+                    </div>
+                    <div class="radio_group">
+                        <label class="option_radio_subtitle"><input type="radio" name="university_option" value="introduction"><p>Introduction<span class="new">NEW</span></p></label>
+                        <label class="option_radio_subtitle"><input type="radio" name="university_option" value="deliverability_guide"><p>Deliverability Guide<span class="new">NEW</span></p></label>
+                        <label class="option_radio_subtitle"><input disabled type="radio" name="university_option" value="control_your_mind"><p>Control your Mind<span class="soon_bubble">SOON</span></p></label>
+                        <label class="option_radio_subtitle"><input disabled type="radio" name="university_option" value="offer_creation"><p>Offer Creation<span class="soon_bubble">SOON</span></p></label>
+                        <label class="option_radio_subtitle"><input disabled type="radio" name="university_option" value="timeFlow_strategy"><p>TimeFlow Strategy<span class="soon_bubble">SOON</span></p></label>
+                        <label class="option_radio_subtitle"><input disabled type="radio" name="university_option" value="integrate_timeFlow"><p>Integrate TimeFlow<span class="soon_bubble">SOON</span></p></label>
+                    </div>
+                </label>
+                <label class="option_radio">
+                    <input type="radio" class="menu_title input_automation" name="menu_option" value="automation">
+                    <div class="option_text_container">
+                        <i class="fa fa-magic" aria-hidden="true"></i>
+                        <p>Automation</p>
+                        <i class="fa fa-chevron-down user_menu_dropdown_icon" aria-hidden="true"></i>
+                    </div>
+                    <div class="radio_group">
+                        <label class="option_radio_subtitle"><input type="radio" name="university_option" value="introduction"><p class="campaign">add new<span class="new"><i class="fa fa-plus" aria-hidden="true"></i></span></p></label>
+                        <label class="option_radio_subtitle"><input type="radio" name="university_option" value="deliverability_guide"><p class="campaign">campaign 1<span class="top">TOP 1</span></p></label>
+                        <label class="option_radio_subtitle"><input type="radio" name="university_option" value="control_your_mind"><p class="campaign">campaign 2<span class="top">TOP 2</span></p></label>
+                        <label class="option_radio_subtitle"><input type="radio" name="university_option" value="offer_creation"><p class="campaign">campaign 3 <span class="top">TOP 3</span></p></label>
+                    </div>
+                </label>             
+                <label class="option_radio soon">
+                    <input disabled type="radio" name="menu_option" value="statistics">
+                    <div class="option_text_container">
+                        <i class="fa fa-line-chart" aria-hidden="true"></i>
+                        <p>Statistics (soon)</p>
+                    </div>
+                </label>
+                <label class="option_radio soon">
+                    <input disabled type="radio" name="menu_option" value="your-offer">
+                    <div class="option_text_container">
+                        <i class="fa fa-area-chart" aria-hidden="true"></i>
+                        <p>Your Offer (soon)</p>
+                    </div>
+                </label>
+            </div>
+
+            <div class="user_menu_setting">
+                <div class="setting_button">
+                    <i class="fa fa-cog" aria-hidden="true"></i>
+                    <p>Settings</p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="right_side_container">
+
+            <header class="">
+                <h3>ReachFlow's University</h3>
+                <div class="search_container">
+                    <input type="text" placeholder="Search">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </div>
+            </header>
+
+            <div class="dashboard_content_container">
+                <div class="onglet_mobile">
+                    <i class="fa fa-chevron-down open_menu_button" aria-hidden="true"></i>
+                </div>
+
+                <div class="dashboard_content university_list_container">
+                    <div class="content_card">
+                        <div class="infos_container">                            
+                            <h3>Introduction<i class="fa fa-check-circle" aria-hidden="true"></i></h3>
+                            <p>Understand the foundations of the TimeFlow system and how to work correctly with consistent results.</p>
+                        </div>
+                        <button><i class="fa fa-eye" aria-hidden="true"></i>Watch Module</button>
+                    </div>
+                    <div class="content_card">
+                        <div class="infos_container">
+                            <h3>Deliverability Guide<i class="fa fa-check-circle" aria-hidden="true"></i></h3>
+                            <p>Get your emails delivered to the inbox and avoid the spam folder.</p>
+                        </div>
+                        <button><i class="fa fa-eye" aria-hidden="true"></i>Watch Module</button>
+                    </div>
+                    <div class="content_card soon">
+                        <div class="infos_container">                            
+                            <h3>Control your mind</h3>
+                            <p>Embody the mindset of a successful agency owner who is able to see and control external factors in a different way.</p>
+                        </div>
+                        <button disabled><i class="fa fa-hourglass-end" aria-hidden="true"></i>Coming Soon</button>
+                    </div>
+                    <div class="content_card soon">
+                        <div class="infos_container">                            
+                        <h3>Offer Creation</h3>
+                        <p>Create an offer so strong that it will be impossible for your clients to say no.</p>
+                        </div>
+                        <button disabled><i class="fa fa-hourglass-end" aria-hidden="true"></i>Coming Soon</button>
+                    </div>
+                    <div class="content_card soon">
+                        <div class="infos_container">                            
+                            <h3>TimeFlow Strategy</h3>
+                            <p>Full strategy on how to make clients using the tools.</p>
+                        </div>
+                        <button disabled><i class="fa fa-hourglass-end" aria-hidden="true"></i>Coming Soon</button>
+                    </div>
+                    <div class="content_card soon">
+                        <div class="infos_container">                            
+                            <h3>Integrate TimeFlow seamlessly</h3>
+                            <p>How to integrate your Flows in any email campaign software. (Coming on the 18th of February)</p>
+                        </div>
+                        <button disabled><i class="fa fa-hourglass-end" aria-hidden="true"></i>Coming Soon</button>
+                    </div>
+                </div>
+
+                <div class="dashboard_content campaign_list_container hide_dashboard_content">
+                    <div class="content_card">
+                        <div class="infos_container">                            
+                            <h3>Campaign 1</h3>
+                            <p>Status <span class="campaign_status">Rendered</span> | Created at <span class="date">20/02/2024</span></p>
+                        </div>
+                        <button><i class="fa fa-eye" aria-hidden="true"></i></button>
+                    </div>
+                    <div class="content_card">
+                        <div class="infos_container">                            
+                            <h3>Campaign 1</h3>
+                            <p>Status <span class="campaign_status">Rendered</span> | Created at <span class="date">20/02/2024</span></p>
+                        </div>
+                        <button><i class="fa fa-eye" aria-hidden="true"></i></button>
+                    </div>
+                    <div class="content_card">
+                        <div class="infos_container">                            
+                            <h3>Campaign 1</h3>
+                            <p>Status <span class="campaign_status">Rendered</span> | Created at <span class="date">20/02/2024</span></p>
+                        </div>
+                        <button><i class="fa fa-eye" aria-hidden="true"></i></button>
+                    </div>
+                    <div class="content_card">
+                        <div class="infos_container">                            
+                            <h3>Campaign 1</h3>
+                            <p>Status <span class="campaign_status">Rendered</span> | Created at <span class="date">20/02/2024</span></p>
+                        </div>
+                        <button><i class="fa fa-eye" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
